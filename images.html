@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Images</title>
+    </head>
+
+    <style>
+        body {
+    background-image: url("abstract-blurred-glamour-blush-color-260nw-319516112.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    padding-left: 20px;
+    padding-right: 20px;
+    div: .transbox{
+    img {
+        opacity: 0.5;
+      }
+      
+      img:hover {
+        opacity: 1.0;
+      }}
+      
+
+}
+h1 {
+  font-size: 40px;
+  font-family: 'Times New Roman', cursive;
+  color: rgb(56, 14, 46);
+}
+.a {
+    font-family: Garamond, serif;
+  font-size: 25px;
+  color: rgb(57, 59, 47);}
+
+  .b {
+    font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px;
+  color: rgb(84, 8, 60);}
+
+  .c{
+    font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px;
+  color: rgb(112, 22, 84);}
+  .button {
+      background-color: #810d64;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 25px ;
+      }
+      .button:hover {background-colour: #dc64be}
+      .button:active{
+        background-colour: #dc64be;
+        box-shadow: 0 5px rgb(207, 139, 139);
+        transform: translateY(4px);
+      }
+    /* Style the footer */
+    footer {
+  background-color: rgb(112, 78, 78);
+  padding: 6px;
+  text-align: center;
+  color: rgb(231, 168, 168);
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+              /* Style the footer */
+footer {
+  background-color: rgb(112, 78, 78);
+  padding: 6px;
+  text-align: center;
+  color: rgb(231, 168, 168);
+}
+    </style>
+
+
+    <body>
+      <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="Heading.html">Heading</a>
+        <a href="lists.html">Lists</a>
+        <a href="table.html">Table</a>
+        <a href="font.html">Font</a>
+        <a href="borders.html">Border</a>
+        <a href="images.html">Image</a>
+        <a href="video.html">Video</a>
+        <a href="hyperlink.html">Hyperlink</a>
+      </div>
+    <center><p><b><h1>HTML Image</h1></b></p></center>
+    <p class="b">Images can improve the design and the appearance of a web page.</p> 
+    <p><h2><u>HTML Images Syntax</u></h2></p>
+    <p class="b">The HTML &lt;img&gt; tag is used to embed an image in a web page.
+Images are not technically inserted into a web page; images are linked to web pages.
+<br>The &lt;img&gt; tag creates a holding space for the referenced image.
+The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.
+The &lt;img&gt; tag has two required attributes:
+<br>src - Specifies the path to the image
+ <br>alt - Specifies an alternate text for the image</p>
+ <p><h2><u>The src Attribute</u></h2></p>
+ <p class="b">The required src attribute specifies the path (URL) to the image.
+<br><b><u>Note:</u></b>
+When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts
+  it into the page. Therefore,<br> make sure that the image actually stays in the same spot in relation
+   to the webpage, otherwise your visitors will get a broken link icon.
+  <br>  The broken link icon and the alt text are shown if the browser cannot find the image.</P>
+  <h2><u>The alt Attribute</u></h2>
+    <p class="b"> The required alt attribute provides an alternate text for an image, if the user for some reason cannot 
+    view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+    <br> The value of the alt attribute should describe the image.If a browser cannot find an image, 
+    it will display the value of the alt attribute.</p>
+    <p><b><u>Tip:</u></b> A screen reader is a software program that reads the HTML code, and allows the user
+         to "listen" to the content.Screen readers are useful for people who are visually impaired or learning
+          disabled.</p>
+     <p><h2><u>Image Size - Width and Height</u></h2>
+      <p class="b"> We can use the style attribute to specify the width and height of an image.
+        Alternatively, we can use the width and height attributes:The width and height attributes always 
+        define the width and height of the image in pixels.
+<br><b><u>Note:</u></b> Always specify the width and height of an image. If width and height are not specified,
+ the web page might flicker while the image loads.</p>
+<h2><u>Width and Height, or Style?</u></h2>
+<p class="b"> The width, height, and style attributes are all valid in HTML.
+<br>However, we suggest using the style attribute. It prevents styles sheets from changing the size of images.
+</p>
+<p><h2>Example:</h2></p>
+        <style>
+        img {
+          width: 30%;
+        }
+        </style>
+        <img src="Nature.jpg">
+        <img src="n3.jfif">
+        <img src="n2.jfif">
+        <p><h3>Example:</h3>
+            <div style="background:;
+            font-size: 20px;
+            padding: 3px;
+            border: 3px solid rgb(184, 19, 121);
+            border-style: dashed;
+            margin: 9px;">
+    &lt;style&gt;
+    <br>img {
+      <br>width: 100%;
+    <br>}
+    <br>&lt;/style&gt;
+    <br>&lt;img src="html5.gif" alt="HTML5 Icon" width="128" height="128"&gt;
+    <br>&lt;img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt;
+    </div>
+</p>
+<p><h3><u>Note:</u></h3></p>
+<p class="b">The first image uses the width attribute (set to 128 pixels), but the style in the 
+    head section overrides it, and sets the width to 100%.
+<br>The second image uses the style attribute to set the width to 128 pixels, this will not be overridden 
+by the style in the head section:
+</p>
+<br>
+<br>
+<center>
+    <ul id="Elements">
+    <a href="index.html" class="button">&laquo;previous</a></br>
+</ul>
+</center>
+<footer>
+  <p>All Copyrights Reserved @2022 CS Dept.</p>
+</footer>
+    </body></html>
