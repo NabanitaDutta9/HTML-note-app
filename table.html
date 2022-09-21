@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+    </head>
+
+    <style>
+        body {
+    background-image: url("abstract-blurred-glamour-blush-color-260nw-319516112.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    padding-left: 20px;
+    padding-right: 20px;
+    div: .transbox{
+    img {
+        opacity: 0.5;
+      }
+      
+      img:hover {
+        opacity: 1.0;
+      }}
+      
+
+}h1 {
+  font-size: 40px;
+  font-family: 'Times New Roman', cursive;
+  color: rgb(56, 14, 46);
+}
+.a {
+    font-family: Garamond, serif;
+  font-size: 25px;
+  color: rgb(57, 59, 47);}
+
+  .b {
+    font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px;
+  color: rgb(84, 8, 60);}
+
+  .c{
+    font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px;
+  color: rgb(112, 22, 84);}
+  .button {
+      background-color: #810d64;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 25px ;
+      }
+      .button:hover {background-colour: #dc64be}
+      .button:active{
+        background-colour: #dc64be;
+        box-shadow: 0 5px rgb(207, 139, 139);
+        transform: translateY(4px);
+      }
+                      /* Style the footer */
+footer {
+  background-color: rgb(112, 78, 78);
+  padding: 6px;
+  text-align: center;
+  color: rgb(231, 168, 168);
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+              /* Style the footer */
+footer {
+  background-color: rgb(112, 78, 78);
+  padding: 6px;
+  text-align: center;
+  color: rgb(231, 168, 168);
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+              /* Style the footer */
+footer {
+  background-color: rgb(112, 78, 78);
+  padding: 6px;
+  text-align: center;
+  color: rgb(231, 168, 168);
+}
+
+    </style>
+    <body>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="Heading.html">Heading</a>
+            <a href="lists.html">Lists</a>
+            <a href="table.html">Table</a>
+            <a href="font.html">Font</a>
+            <a href="borders.html">Border</a>
+            <a href="images.html">Image</a>
+            <a href="video.html">Video</a>
+            <a href="hyperlink.html">Hyperlink</a>
+          </div>
+          <center> <p><b><h1>HTML Table</h1></b></p></center>
+    <p class="b">HTML tables allow web developers to arrange data into <br>rows and columns.</p>
+    <p><h2>Example:</h2>
+        <div style="background:;
+        font-size: 20px;
+        padding: 3px;
+        border: 3px solid rgb(184, 19, 121);
+        border-style: dashed;
+        margin: 9px;">
+        <table border="1">
+            <tr>
+                <th colspan="2">Days in a week</th>
+            </tr>
+            <tr>
+                <td rowspan="5">Weekdays</td>
+                <td>Monday</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+            </tr>
+             <tr>
+                 <td>Wednesday</td>
+             </tr>
+             <tr>
+                 <td>Thursday</td>
+             </tr>
+              <tr>
+                  <td>Friday</td>
+              </tr>
+              <tr>
+                  <td rowspan="2">Weekends</td>
+                  <td>Saturday</td>
+              </tr>
+              <tr>
+                  <td>Sunday</td>
+              </tr>
+          </table>        
+        </div>
+    </p>
+    <p class="b">A table in HTML consists of table cells inside rows and columns.</p>
+    <p><h3><u>Table Cells</u></h3></p>
+    <p class="b">Each table cell is defined by a &lt;td&gt; and a &lt;/td&gt; tag. td stands for table data.
+        <br>Everything between &lt;td&gt; and &lt;/td&gt; are the content of the table cell.</p>
+    <p><h3><u>Table Rows</u></h3></p>
+    <p class="b">Each table row starts with a &lt;tr&gt; and ends with a &lt;/tr&gt; tag.<br>tr stands for table row.</p>
+     <p><h3><u>Table Headers</u></h3></p>
+     <p class="b">Sometimes we want our cells to be table header cells. In those cases 
+        <br>we should use the &lt;th&gt; tag instead of the &lt;td&gt; tag.<br>
+    th stands for table header.</p>
+    <p><h3>Example:</h3>
+        <div style="background:;
+        font-size: 20px;
+        padding: 3px;
+        border: 3px solid rgb(184, 19, 121);
+        border-style: dashed;
+        margin: 9px;">
+        <p>&lt;table&gt;
+            <br>&lt;tr&gt;
+            <br>&lt;th&gt;Person 1 &lt;/th&gt;
+            <br>&lt;th&gt;Person 2 &lt;/th&gt;
+            <br>&lt;th&gt;Person 3 &lt;/th&gt;
+           <br>&lt;/tr&gt;
+           <br>&lt;tr&gt;
+            <br>&lt;td&gt;A &lt;/td&gt;
+            <br>&lt;td&gt;B &lt;/td&gt;
+            <br>&lt;td&gt;C &lt;/td&gt;
+           <br>&lt;/tr&gt;
+           <br>&lt;tr&gt;
+           <br>&lt;td&gt;16&lt;/td&gt;
+           <br>&lt;td&gt;18&lt;/td&gt;
+           <br>&lt;td&gt;20&lt;/td&gt;
+           <br>&lt;/tr&gt;
+           <br>&lt;table&gt;
+        </p>
+        </div>
+    </p>
+    <p><h3>Output:</h3>
+        <div style="background:;
+        font-size: 20px;
+        padding: 3px;
+        border: 3px solid rgb(184, 19, 121);
+        border-style: dashed;
+        margin: 9px;">
+        <table border="1">
+            <tr>
+                <th>Person 1</th>
+                <th>Person 2</th>
+                <th>Person 3</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>18</td>
+                <td>20</td>
+            </tr>
+        </table>
+        </div>
+    </p>
+    <br>
+    <br>
+    <center>
+        <ul id="Elements">
+        <a href="index.html" class="button">&laquo;previous</a></br>
+    </ul>
+    </center>
+    <footer>
+        <p>All Copyrights Reserved @2022 CS Dept.</p>
+      </footer>
+</body>
+</html>
